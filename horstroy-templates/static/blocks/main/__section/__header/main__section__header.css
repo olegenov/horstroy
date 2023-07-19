@@ -1,0 +1,12 @@
+.main__section__header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+@media only screen and (max-width : 1024px) {
+    .main__section__header{
+        gap: 4px;
+    }
+}

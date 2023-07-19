@@ -1,0 +1,4 @@
+.main__subsection__category-list {
+    display: flex;
+    gap: 18px;
+}

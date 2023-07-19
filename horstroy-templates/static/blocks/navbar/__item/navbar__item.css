@@ -1,0 +1,18 @@
+.navbar__item {
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    margin: 0;
+    width: max-content;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar__item.active {
+    font-weight: 500;
+}

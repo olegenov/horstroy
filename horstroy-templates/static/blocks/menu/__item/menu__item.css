@@ -1,0 +1,25 @@
+.menu__item {
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 22px;
+    color: #000000;
+    margin: 0;
+    width: max-content;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 48px;
+    opacity: 0;
+}
+
+.menu__item.active {
+    font-weight: 500;
+}
+
+.menu__item.appear {
+    transition: 1s opacity;
+    opacity: 1;
+}

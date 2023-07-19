@@ -1,0 +1,7 @@
+.button__style_green {
+    background-color: #90AB9A;
+}
+
+.button__style_green:hover {
+    background-color: #708678;
+}

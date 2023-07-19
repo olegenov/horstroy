@@ -1,0 +1,28 @@
+.card {
+    opacity: 0;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    min-width: 200px;
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 400px;
+    max-height: 420px;
+    margin-bottom: 5px;
+    border-radius: 32px;
+    background-color: #F6F6F6;
+    overflow: hidden;
+}
+
+@media only screen and (max-width : 1024px) {
+    .card{
+        min-height: 309px;
+        min-width: 175px;
+        border-radius: 16px;
+    }
+}
+
+.card.show {
+    opacity: 1;
+    transition: 1s opacity;
+}

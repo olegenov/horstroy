@@ -1,0 +1,7 @@
+.menu__auth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: flex-end;
+}

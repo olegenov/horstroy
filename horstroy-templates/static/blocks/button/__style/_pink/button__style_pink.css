@@ -1,0 +1,8 @@
+.button__style_pink {
+    background-color: #EAA8C4;
+    color: #FFFFFF;
+}
+
+.button__style_pink:hover {
+    background-color: #c78da5;
+}

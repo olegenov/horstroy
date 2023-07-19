@@ -1,0 +1,34 @@
+input[type="checkbox"].filters-window__item__size {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+    height: 24px;
+    width: 35px;
+    border-radius: 50vh;
+    -webkit-appearance: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    position: relative;
+}
+
+
+input[type="checkbox"].filters-window__item__size:checked {
+    background-color: #BFBFBF;
+}
+
+input[type="checkbox"].filters-window__item__size::before {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    content: attr(value);
+    position: absolute;
+    left: auto;
+}

@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yukka</title>
+    <link rel="stylesheet" href="static/pages/index.css" type='text/css' media='all'>
+</head>
+<body class="body">
+    <div class="preloader">
+        <div class="preloader__container">
+            <div class="preloader__item">
+                <span class="icon-logo-animate-round"></span>
+                <span class="icon-logo-flower"></span>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__container">
+                <a href="" class="link"><span class="icon-logo"></span></a>
+                <div class="nav__items">
+                    <div class="search hidden" id="Search">
+                        <form method="get" action="{% url 'index' %}" class="search__group">
+                            <input class="search__input" name="search" id="SearchInput" autocomplete="off" value="">
+                            <button type="submit" class="search__submit"><span class="icon-search-submit link"></span></button>
+                        </form>
+                        <button class="button__empty" id="SearchClose">
+                            <span class="search__close"></span>
+                        </button>
+                    </div>
+                    <button class="button__empty" id="SearchButton">
+                        <span class="icon-search"></span>
+                    </button>
+                    <a href="" class="link"><span class="icon-like"></span></a>
+                    <a href="" class="link"><span class="icon-cart"></span></a>
+                    <a href="" class="link"><span class="icon-profile"></span></a>
+                    <button class="button__empty" id="MenuButton">
+                        <span class="icon-menu"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="menu closed" id="MenuContainer">
+            <div class="menu__container">
+                <button class="button__empty" id="MenuClose">
+                    <span class="icon-close"></span>
+                </button>
+                <a href="" class="menu__item" id="MenuItem">Профиль</a>
+                <a href="" class="menu__item active navbar__item__style_pink" id="MenuItem">Девочке</a>
+                <a href="" class="menu__item navbar__item__style_green" id="MenuItem">Мальчику</a>
+                <a href="" class="menu__item navbar__item__style_purple" id="MenuItem">Малышу</a>
+                <a href="" class="menu__item" id="MenuItem">Новое</a>
+                <a href="" class="menu__item" id="MenuItem">О нас</a>
+                <a href="" class="menu__item" id="MenuItem">Контакты</a>
+            </div>
+        </div>
+    </header>
+    <main class="main container">
+        <div class="navbar">
+            <div class="navbar__container">
+                <a href="" class="navbar__item navbar__item__style_pink active link">Девочке</a>
+                <a href="" class="navbar__item navbar__item__style_green link">Мальчику</a>
+                <a href="" class="navbar__item navbar__item__style_purple link">Малышу</a>
+                <a href="" class="navbar__item link">Новое</a>
+                <a href="" class="navbar__item link">О нас</a>
+                <a href="" class="navbar__item link">Контакты</a>
+            </div>
+        </div>
+        <div class="main__section">
+            <div class="banner" id="Banner">
+                <div class="banner__content active">
+                    <div class="gradient-overlay"></div>
+                    <img class="banner__image" src="./static/images/banner-test.png">
+                    <div class="banner__content__container">
+                        <h3 class="banner__content__text">Новогодние скидки</h3>
+                        <a href="" class="banner__link link">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="banner__content">
+                    <div class="gradient-overlay"></div>
+                    <img class="banner__image" src="./static/images/banner-test2.png">
+                    <div class="banner__content__container">
+                        <h3 class="banner__content__text">Еще скидки</h3>
+                        <a href="" class="banner__link link">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__section cards">
+            <div class="main__subsection">
+                <div class="main__subsection__header">
+                    <a href="" class="link">
+                        <h1 class="main__subsection__title main__subsection__title__style_pink">
+                            Девочке
+                            <span class="icon-rigth pink"></span>
+                        </h1>
+                    </a>
+                    <p class="main__subsection__description">2-14 лет</p>
+                </div>
+                <list class="main__subsection__category-list">
+                    <div class="category-card">
+                        <div class="category-card__container">
+                            <a href="" class="link">
+                                <img class="category-card__image" src="./static/images/test2.jpg">
+                            </a>
+                            <div class="category-card__body">
+                                <a href="" class="category-card__title link">
+                                    Категория
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-card__container">
+                            <a href="" class="link">
+                                <img class="category-card__image" src="./static/images/test2.jpg">
+                            </a>
+                            <div class="category-card__body">
+                                <a href="" class="category-card__title link">
+                                    Категория
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-card__container">
+                            <a href="" class="link">
+                                <img class="category-card__image" src="./static/images/test2.jpg">
+                            </a>
+                            <div class="category-card__body">
+                                <a href="" class="category-card__title link">
+                                    Категория
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </list>
+            </div>
+            <div class="main__subsection">
+                <div class="main__subsection__header">
+                    <a href="" class="link">
+                        <h1 class="main__subsection__title main__subsection__title__style_green">
+                            Мальчику
+                            <span class="icon-rigth green"></span>
+                        </h1>
+                    </a>
+                    <p class="main__subsection__description">2-14 лет</p>
+                </div>
+                <list class="main__subsection__category-list">
+                    <div class="category-card">
+                        <div class="category-card__container">
+                            <a href="" class="link">
+                                <img class="category-card__image" src="./static/images/test2.jpg">
+                            </a>
+                            <div class="category-card__body">
+                                <a href="" class="category-card__title link">
+                                    Категория
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-card__container">
+                            <a href="" class="link">
+                                <img class="category-card__image" src="./static/images/test2.jpg">
+                            </a>
+                            <div class="category-card__body">
+                                <a href="" class="category-card__title link">
+                                    Категория
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-card__container">
+                            <a href="" class="link">
+                                <img class="category-card__image" src="./static/images/test2.jpg">
+                            </a>
+                            <div class="category-card__body">
+                                <a href="" class="category-card__title link">
+                                    Категория
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </list>
+            </div>
+            <div class="main__subsection">
+                <div class="main__subsection__header">
+                    <a href="" class="link">
+                        <h1 class="main__subsection__title main__subsection__title__style_purple">
+                            Малышу
+                            <span class="icon-rigth purple"></span>
+                        </h1>
+                    </a>
+                    <p class="main__subsection__description">0-2 года</p>
+                </div>
+                <list class="main__subsection__category-list">
+                    <div class="category-card">
+                        <div class="category-card__container">
+                            <a href="" class="link">
+                                <img class="category-card__image" src="./static/images/test2.jpg">
+                            </a>
+                            <div class="category-card__body">
+                                <a href="" class="category-card__title link">
+                                    Категория
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-card__container">
+                            <a href="" class="link">
+                                <img class="category-card__image" src="./static/images/test2.jpg">
+                            </a>
+                            <div class="category-card__body">
+                                <a href="" class="category-card__title link">
+                                    Категория
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-card__container">
+                            <a href="" class="link">
+                                <img class="category-card__image" src="./static/images/test2.jpg">
+                            </a>
+                            <div class="category-card__body">
+                                <a href="" class="category-card__title link">
+                                    Категория
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </list>
+            </div>
+        </div>
+        <div class="main__section">
+            <div class="main__section__header">
+                <h1 class="main__section__title">Новинки</h1>
+            </div>
+            <list class="main__section__card-list">
+                <div class="card">
+                    <div class="card__container">
+                        <a href="" class="link">
+                            <img class="card__image" src="./static/images/test1.jpg">
+                        </a>
+                        <div class="card__body">
+                            <div class="card__header">
+                                <a href="" class="card__title link">
+                                    Очень длинное название
+                                </a>
+                                <span class="icon-item_like link"></span>
+                            </div>
+                            <div class="card__items">
+                                <div class="card__price">
+                                    <p class="card__price_value">1234</p>
+                                    <p class="card__price_currency">руб</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__footer">
+                            <button class="button button__style_purple button__size_full">Добавить в корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__container">
+                        <a href="" class="link">
+                            <img class="card__image" src="./static/images/test1.jpg">
+                        </a>
+                        <div class="card__body">
+                            <div class="card__header">
+                                <a href="" class="card__title link">
+                                    Очень длинное название
+                                </a>
+                                <span class="icon-item_like link"></span>
+                            </div>
+                            <div class="card__items">
+                                <div class="card__price">
+                                    <p class="card__price_value">1234</p>
+                                    <p class="card__price_currency">руб</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__footer">
+                            <button class="button button__style_purple button__size_full">Добавить в корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__container">
+                        <a href="" class="link">
+                            <img class="card__image" src="./static/images/test1.jpg">
+                        </a>
+                        <div class="card__body">
+                            <div class="card__header">
+                                <a href="" class="card__title link">
+                                    Очень длинное название
+                                </a>
+                                <span class="icon-item_like link"></span>
+                            </div>
+                            <div class="card__items">
+                                <div class="card__price">
+                                    <p class="card__price_value">1234</p>
+                                    <p class="card__price_currency">руб</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__footer">
+                            <button class="button button__style_purple button__size_full">Добавить в корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </list>
+        </div>
+        <div class="main__section">
+            <div class="main__section__header">
+                <h1 class="main__section__title">Почему мы?</h1>
+            </div>
+            <list class="pros-list">
+                <div class="pros">
+                    <span class="pros__imgs__wide-assortiment"></span>
+                    <p class="pros__title">Широкий ассортимент</p>
+                </div>
+                <div class="pros">
+                    <span class="pros__imgs__quality"></span>
+                    <p class="pros__title">Высокое качество</p>
+                </div>
+                <div class="pros">
+                    <span class="pros__imgs__clients"></span>
+                    <p class="pros__title">Довольные клиенты</p>
+                </div>
+                <a href="" class="pros__link link">
+                    <p class="pros__title">Больше о нас</p>
+                    <span class="icon-arrow-green"></span>
+                </a>
+            </list>
+        </div>
+        <form class="main__section email-contact">
+            <div class="email-contact__container">
+                <h1 class="main__section__title">Остались вопросы?</h1>
+                <textarea class="email-contact__textarea" placeholder="Задайте!"></textarea>
+                <div class="email-contact__group">
+                    <label class="email-contact__label">Ваш e-mail</label>
+                    <input class="email-contact__input">
+                </div>
+                <button type="submit" class="button button__style_pink">Отправить</button>
+                <span class="email-contact__picture"></span>
+            </div>
+        </form>
+        <div class="main__section contacts">
+            <div class="contacts__container">
+                <h1 class="main__section__title">Контакты</h1>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__section">
+                <div class="footer__items">
+                    <h3 class="footer__item__title">Контакты</h3>
+                    <p class="footer__item">email@email.com</p>
+                    <p class="footer__item">+7 123 456 78 90</p>
+                </div>
+                <div class="footer__items">
+                    <h3 class="footer__item__title">Информация о юридическом лице</h3>
+                    <p class="footer__item">ИНН</p>
+                </div>
+                <div class="footer__items">
+                    <h3 class="footer__item__title">Документы</h3>
+                    <p class="footer__item">Конфеденциальность</p>
+                    <p class="footer__item">Оферта</p>
+                </div>
+            </div>
+            <p class="footer__item">© Yukka, 2023</p>
+            <a href="" class="link"><span class="icon-olegenov"></span></a>
+        </div>
+    </footer>
+</body>
+<script src="static/js/components/Menu.js"></script>
+<script src="static/js/components/Banner.js"></script>
+<script src="static/js/cards.js"></script>
+<script src="static/js/banner.js"></script>
+<script src="static/js/menu.js"></script>
+<script src="static/js/preloader.js"></script>
+</html>

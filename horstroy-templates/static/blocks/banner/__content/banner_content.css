@@ -1,0 +1,24 @@
+.banner__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: visibility 1s, opacity 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media only screen and (max-width : 1024px) {
+    .banner__content {
+        font-size: 24px;
+        line-height: 33px;
+    }
+}
+
+.banner__content.active {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 1s ease-in-out;
+}

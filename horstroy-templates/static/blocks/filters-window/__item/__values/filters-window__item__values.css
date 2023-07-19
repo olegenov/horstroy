@@ -1,0 +1,17 @@
+.filters-window__item__values {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 4px 0;
+}
+
+.filters-window__item__values::-webkit-scrollbar{
+    height: 2px;
+    background-color: #d8d8d8;
+}
+
+.filters-window__item__values::-webkit-scrollbar-thumb {
+    background-color: #AC91CA;
+    border-radius: 1px;
+}

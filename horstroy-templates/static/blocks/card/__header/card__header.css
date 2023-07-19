@@ -1,0 +1,14 @@
+.card__header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: max-content;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    gap: 10px;
+}
+
+.icon-item_like {
+    align-self: flex-start;
+}

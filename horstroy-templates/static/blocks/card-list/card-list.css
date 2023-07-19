@@ -1,0 +1,25 @@
+.card-list {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width : 1024px) {
+    .card-list{
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(172px, 1fr));
+    }
+}
+
+/*
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc((100% - 3 * 256px)/2);
+    width: 100%;
+    height: 100%;
+}
+*/

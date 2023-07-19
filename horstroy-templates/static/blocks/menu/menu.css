@@ -1,0 +1,19 @@
+.menu {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10000;
+    transition: visibility 0.5s, opacity 0.5s ease-in-out;
+}
+
+.menu.active {
+    transition: visibility 0s, opacity 0.5s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}

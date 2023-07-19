@@ -1,0 +1,14 @@
+.item__group {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin: 0 0 auto 0;
+}
+
+@media only screen and (max-width : 1024px) {
+    .item__group{
+        width: 100%;
+        max-width: 400px;
+    }
+}
