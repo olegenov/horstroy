@@ -1,0 +1,29 @@
+.info-window {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.30);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 32px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s ease-in-out;
+}
+
+.info-window.active {
+    transition: visibility 0s, opacity 0.5s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+
+@media only screen and (max-width : 1024px) {
+    .info-window {
+        padding-bottom: 0;
+    }
+}

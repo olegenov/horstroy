@@ -1,9 +1,0 @@
-.contacts__container {
-    height: 100%;
-    width: 100%;
-    padding: 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-    position: relative;
-}

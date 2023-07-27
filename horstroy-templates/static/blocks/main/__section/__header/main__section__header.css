@@ -1,12 +1,13 @@
 .main__section__header {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 12px;
+    flex-direction: row;
+    gap: 30px;
+    align-items: last baseline;
 }
 
 @media only screen and (max-width : 1024px) {
     .main__section__header{
-        gap: 4px;
+        gap: 16px;
     }
 }

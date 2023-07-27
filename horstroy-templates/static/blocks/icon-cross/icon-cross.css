@@ -1,0 +1,15 @@
+.icon-cross {
+    display: block;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    box-align: center;
+    width: 21px;
+    height: 21px;
+    background-image: url("../../images/cross.svg");
+    background-size: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: transparent
+}

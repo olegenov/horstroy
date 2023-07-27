@@ -1,7 +1,0 @@
-.item__image {
-    height: calc(100% / 2 * 3);
-    width: 40%;
-    min-width: 300px;
-    object-fit:cover;
-    margin: 0 auto;
-}

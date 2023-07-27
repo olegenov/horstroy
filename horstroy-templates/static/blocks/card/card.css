@@ -3,22 +3,22 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    min-width: 200px;
+    flex-shrink: 0;
+    min-width: 252px;
+    max-width: 270px;
     box-sizing: border-box;
-    height: 100%;
-    min-height: 400px;
-    max-height: 420px;
+    height: 378px;
     margin-bottom: 5px;
-    border-radius: 32px;
     background-color: #F6F6F6;
     overflow: hidden;
+    cursor: pointer;
 }
 
 @media only screen and (max-width : 1024px) {
     .card{
-        min-height: 309px;
-        min-width: 175px;
-        border-radius: 16px;
+        height: 261px;
+        min-width: 174px;
+        max-width: 180px;
     }
 }
 

@@ -2,18 +2,20 @@ class Menu {
     constructor(menuButton, menuContainer) {
         this.menuButton = menuButton;
         this.menuContainer = menuContainer;
+        this.OpenMenu = this.OpenMenu.bind(this);
+        this.CloseMenu = this.CloseMenu.bind(this);
     }
 
     addEvent() {
-        menuButton.addEventListener('click', this.OpenMenu)
-        menuContainer.querySelector('#MenuClose').addEventListener('click', this.CloseMenu)
+        this.menuButton.addEventListener('click', this.OpenMenu)
+        this.menuContainer.querySelector('#MenuClose').addEventListener('click', this.CloseMenu)
     }
 
     OpenMenu() {
-        menuContainer.classList.add('active')
+        this.menuContainer.classList.add('active')
         var items = document.querySelectorAll('.menu__item')
     
-        for (i = 1; i < items.length; i++) {
+        for (i = 0; i < items.length; i++) {
             (function(i) {
                 window.setTimeout(function () {
                     var item = items[i];
@@ -24,7 +26,7 @@ class Menu {
     }
     
     CloseMenu() {
-        menuContainer.classList.remove('active')
+        this.menuContainer.classList.remove('active')
         window.setTimeout(function () {
             var items = document.querySelectorAll('.menu__item')
             for (let item of items) {

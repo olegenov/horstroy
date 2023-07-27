@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap');
 
 @import "../vendor/normalize.css";
 @import "../blocks/body/body.css";
@@ -12,25 +12,19 @@
 @import "../blocks/nav/nav.css";
 @import "../blocks/nav/__container/nav__container.css";
 @import "../blocks/nav/__items/nav__items.css";
+@import "../blocks/nav/__item/nav__item.css";
+@import "../blocks/nav/__link/nav__link.css";
+@import "../blocks/nav/__menu/nav__menu.css";
 
 @import "../blocks/menu/menu.css";
 @import "../blocks/menu/__container/menu__container.css";
 @import "../blocks/menu/__item/menu__item.css";
-@import "../blocks/menu/__auth/menu__auth.css";
-@import "../blocks/menu/__auth/__text/menu__auth__text.css";
-
-@import "../blocks/search/search.css";
-@import "../blocks/search/__close/search__close.css";
-@import "../blocks/search/__group/search__group.css";
-@import "../blocks/search/__input/search__input.css";
-@import "../blocks/search/__submit/search__submit.css";
+@import "../blocks/menu/__item/__title/menu__item__title.css";
+@import "../blocks/menu/__item/__subtitle/menu__item__subtitle.css";
 
 @import "../blocks/navbar/navbar.css";
 @import "../blocks/navbar/__container/navbar__container.css";
 @import "../blocks/navbar/__item/navbar__item.css";
-@import "../blocks/navbar/__item/__style/_green/navbar__item__style_green.css";
-@import "../blocks/navbar/__item/__style/_pink/navbar__item__style_pink.css";
-@import "../blocks/navbar/__item/__style/_purple/navbar__item__style_purple.css";
 
 @import "../blocks/footer/footer.css";
 @import "../blocks/footer/__section/footer__section.css";
@@ -45,85 +39,44 @@
 
 @import "../blocks/main/__section/main__section.css";
 @import "../blocks/main/__section/__header/main__section__header.css";
+@import "../blocks/main/__section/__image/main__section__image.css";
+@import "../blocks/main/__section/__text/main__section__text.css";
+@import "../blocks/main/__section/__content/main__section__content.css";
+@import "../blocks/main/__section/__icon-sign/main__section__icon-sign.css";
 @import "../blocks/main/__section/__title/main__section__title.css";
 @import "../blocks/main/__section/__card-list/main__section__card-list.css";
 
-@import "../blocks/main/__subsection/main__subsection.css";
-@import "../blocks/main/__subsection/__header/main__subsection__header.css";
-@import "../blocks/main/__subsection/__title/main__subsection__title.css";
-@import "../blocks/main/__subsection/__title/__style/main__subsection__title__style_green.css";
-@import "../blocks/main/__subsection/__title/__style/main__subsection__title__style_pink.css";
-@import "../blocks/main/__subsection/__title/__style/main__subsection__title__style_purple.css";
-@import "../blocks/main/__subsection/__description/main__subsection__description.css";
-@import "../blocks/main/__subsection/__category-list/main__subsection__card-list.css";
-
 @import "../blocks/banner/banner.css";
-@import "../blocks/banner/__link/banner__link.css";
-@import "../blocks/banner/__image/banner__image.css";
-@import "../blocks/banner/__content/banner_content.css";
-@import "../blocks/banner/__content/__container/banner__content__container.css";
-@import "../blocks/banner/__content/__text/banner__content__text.css";
 
 @import "../blocks/card/card.css";
 @import "../blocks/card/__container/card__container.css";
-@import "../blocks/card/__body/card__body.css";
-@import "../blocks/card/__footer/card__footer.css";
 @import "../blocks/card/__header/card__header.css";
 @import "../blocks/card/__title/card__title.css";
 @import "../blocks/card/__image/card__image.css";
-@import "../blocks/card/__items/card__items.css";
-@import "../blocks/card/__price/card__price.css";
-@import "../blocks/card/__price/_currency/card__price_currency.css";
-@import "../blocks/card/__price/_value/card__price_value.css";
 
-@import "../blocks/category-card/category-card.css";
-@import "../blocks/category-card/__container/category-card__container.css";
-@import "../blocks/category-card/__body/category-card__body.css";
-@import "../blocks/category-card/__header/category-card__header.css";
-@import "../blocks/category-card/__title/category-card__title.css";
-@import "../blocks/category-card/__image/category-card__image.css";
+@import "../blocks/info-window/info-window.css";
+@import "../blocks/info-window/__container/info-window__container.css";
+@import "../blocks/info-window/__content/info-window__content.css";
+@import "../blocks/info-window/__header/info-window__header.css";
+@import "../blocks/info-window/__nav/info-window__nav.css";
+@import "../blocks/info-window/__title/info-window__title.css";
+@import "../blocks/info-window/__text/info-window__text.css";
+@import "../blocks/info-window/__gallery/info-window__gallery.css";
+@import "../blocks/info-window/__gallery/__item/info-window__gallery__item.css";
 
 @import "../blocks/button/button.css";
 @import "../blocks/button/__size/_full/button__size_full.css";
-@import "../blocks/button/__style/_purple/button__style_purple.css";
-@import "../blocks/button/__style/_gray/button__style_gray.css";
-@import "../blocks/button/__style/_pink/button__style_pink.css";
-@import "../blocks/button/__style/_green/button__style_green.css";
 @import "../blocks/button/__empty/button__empty.css";
 
-@import "../blocks/pros-list/pros-list.css";
-
-@import "../blocks/pros/pros.css";
-@import "../blocks/pros/__imgs/pros__imgs__clients.css";
-@import "../blocks/pros/__imgs/pros__imgs__quality.css";
-@import "../blocks/pros/__imgs/pros__imgs__wide-assortiment.css";
-@import "../blocks/pros/__title/pros__title.css";
-@import "../blocks/pros/__link/pros__link.css";
-
-@import "../blocks/email-contact/email-contact.css";
-@import "../blocks/email-contact/__container/email-contact__container.css";
-@import "../blocks/email-contact/__group/email-contact__group.css";
-@import "../blocks/email-contact/__input/email-contact__input.css";
-@import "../blocks/email-contact/__label/email-contact__label.css";
-@import "../blocks/email-contact/__textarea/email-contact__textarea.css";
-@import "../blocks/email-contact/__picture/email-contact__picture.css";
-
-@import "../blocks/contacts/contacts.css";
-@import "../blocks/contacts/__container/contacts__container.css";
-
-@import "../blocks/icon-right/icon-rigth.css";
-@import "../blocks/icon-arrow-green/icon-arrow-green.css";
-@import "../blocks/icon-plus/icon-plus.css";
-@import "../blocks/icon-logo-animate/icon-logo-animate.css";
 @import "../blocks/icon-logo/icon-logo.css";
-@import "../blocks/icon-cart/icon-cart.css";
-@import "../blocks/icon-profile/icon-profile.css";
-@import "../blocks/icon-like/icon-like.css";
-@import "../blocks/icon-item_like/icon-item_like.css";
+@import "../blocks/icon-logo-animate/icon-logo-animate.css";
 @import "../blocks/icon-menu/icon-menu.css";
 @import "../blocks/icon-olegenov/icon-olegenov.css";
-@import "../blocks/icon-close/icon-close.css";
-@import "../blocks/icon-search/icon-search.css";
+@import "../blocks/icon-cross/icon-cross.css";
+@import "../blocks/icon-tel/icon-tel.css";
+@import "../blocks/icon-mail/icon-mail.css";
+@import "../blocks/icon-arrow/icon-arrow.css";
+@import "../blocks/icon-close-window/icon-close-window.css";
 
 * {
     box-sizing: border-box;
@@ -131,4 +84,16 @@
 html,
 body {
     min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    height: 4px;
+    width: 8px;
+    background-color: none;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #adadad;
+    border-radius: 4px;
 }

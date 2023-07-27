@@ -1,0 +1,21 @@
+.icon-arrow {
+    display: block;
+    position: inherit;
+    box-align: center;
+    width: 63px;
+    height: 16px;
+    background-image: url("../../images/arrow.svg");
+    background-size: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: transparent
+}
+
+@media only screen and (max-width : 1024px) {
+    .icon-arrow {
+        background-image: url("../../images/arrow-small.svg");
+        width: 46px;
+        height: 16px;
+    }
+}

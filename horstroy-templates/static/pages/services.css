@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap');
+
+@import "../vendor/normalize.css";
+@import "../blocks/body/body.css";
+@import "../blocks/container/container.css";
+@import "../blocks/link/link.css";
+
+@import "../blocks/preloader/preloader.css";
+@import "../blocks/preloader/__container/preloader__container.css";
+@import "../blocks/preloader/__item/preloader__item.css";
+
+@import "../blocks/nav/nav.css";
+@import "../blocks/nav/__container/nav__container.css";
+@import "../blocks/nav/__items/nav__items.css";
+@import "../blocks/nav/__item/nav__item.css";
+@import "../blocks/nav/__link/nav__link.css";
+@import "../blocks/nav/__menu/nav__menu.css";
+
+@import "../blocks/menu/menu.css";
+@import "../blocks/menu/__container/menu__container.css";
+@import "../blocks/menu/__item/menu__item.css";
+@import "../blocks/menu/__item/__title/menu__item__title.css";
+@import "../blocks/menu/__item/__subtitle/menu__item__subtitle.css";
+
+@import "../blocks/navbar/navbar.css";
+@import "../blocks/navbar/__container/navbar__container.css";
+@import "../blocks/navbar/__item/navbar__item.css";
+
+@import "../blocks/footer/footer.css";
+@import "../blocks/footer/__section/footer__section.css";
+@import "../blocks/footer/__container/footer__container.css";
+@import "../blocks/footer/__items/footer__items.css";
+@import "../blocks/footer/__item/footer__item.css";
+@import "../blocks/footer/__item/__title/footer__item__title.css";
+
+@import "../blocks/main/main.css";
+@import "../blocks/main/__header/main__header.css";
+@import "../blocks/main/__title/main__title.css";
+
+@import "../blocks/card-list/card-list.css";
+@import "../blocks/card-list/__container/card-list__container.css";
+
+@import "../blocks/card/card.css";
+@import "../blocks/card/__container/card__container.css";
+@import "../blocks/card/__header/card__header.css";
+@import "../blocks/card/__title/card__title.css";
+@import "../blocks/card/__image/card__image.css";
+
+@import "../blocks/info-window/info-window.css";
+@import "../blocks/info-window/__container/info-window__container.css";
+@import "../blocks/info-window/__content/info-window__content.css";
+@import "../blocks/info-window/__header/info-window__header.css";
+@import "../blocks/info-window/__nav/info-window__nav.css";
+@import "../blocks/info-window/__title/info-window__title.css";
+@import "../blocks/info-window/__text/info-window__text.css";
+@import "../blocks/info-window/__gallery/info-window__gallery.css";
+@import "../blocks/info-window/__gallery/__item/info-window__gallery__item.css";
+
+@import "../blocks/button/button.css";
+@import "../blocks/button/__size/_full/button__size_full.css";
+@import "../blocks/button/__empty/button__empty.css";
+
+@import "../blocks/icon-logo/icon-logo.css";
+@import "../blocks/icon-menu/icon-menu.css";
+@import "../blocks/icon-olegenov/icon-olegenov.css";
+@import "../blocks/icon-cross/icon-cross.css";
+@import "../blocks/icon-arrow/icon-arrow.css";
+@import "../blocks/icon-close-window/icon-close-window.css";
+
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    height: 4px;
+    width: 8px;
+    background-color: none;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #adadad;
+    border-radius: 4px;
+}

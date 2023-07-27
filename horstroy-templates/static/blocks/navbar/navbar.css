@@ -2,6 +2,16 @@
     width: 100%;
     height: max-content;
     margin-bottom: 10px;
+    height: 77px;
+    background: rgba(255, 255, 255, 0.60);
+    backdrop-filter: blur(25px);
+    z-index: 100;
+    position: absolute;
+    overflow-y: visible;
+    top: 90px;
+    left: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 @media only screen and (max-width : 1024px) {

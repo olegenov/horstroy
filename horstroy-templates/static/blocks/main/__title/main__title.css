@@ -1,15 +1,17 @@
 .main__title {
-    font-family: 'Inter';
+    font-family: Cormorant Garamond;
+    font-size: 38px;
     font-style: normal;
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 38px;
+    font-weight: 700;
+    line-height: normal;
     color: black;
     cursor: default;
+    margin: 0;
+    padding: 0;
 }
 
 @media only screen and (max-width : 1024px) {
     .main__title{
-        font-size: 20px;
+        font-size: 24px;
     }
 }

@@ -3,12 +3,13 @@
     justify-content: center;
     height: 90px;
     width: 100%;
+    background: rgba(241, 241, 241, 0.617);
+    backdrop-filter: blur(25px);
+    z-index: 1000;
 }
 
 @media only screen and (max-width : 1024px) {
     .nav {
         position: fixed;
-        background: rgba(255, 255, 255, 0.9);
-        z-index: 1000;
     }
 }

@@ -1,0 +1,27 @@
+.main__section__image {
+    position: absolute;
+    object-fit: cover;
+    max-width: 40%;
+}
+
+.main__section__image.right {
+    right: 32px;
+}
+
+.main__section__image.left{
+    left: 32px;
+}
+
+@media only screen and (max-width : 1024px) {
+    .main__section__image {
+        position: relative;
+        max-width: none;
+        width: 100%;
+        right: 0;
+        left: 0;
+    }
+
+    .main__section__image.hidden {
+        display: none;
+    }
+}

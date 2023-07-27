@@ -1,0 +1,19 @@
+.info-window__title {
+    color: #000;
+    text-align: center;
+    font-family: Cormorant Garamond;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+    font-variant-numeric: lining-nums tabular-nums;
+    cursor: default;
+}
+
+@media only screen and (max-width : 1024px) {
+    .info-window__title {
+        font-size: 24px;
+    }
+}

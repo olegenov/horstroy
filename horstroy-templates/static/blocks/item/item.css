@@ -1,6 +1,0 @@
-.item {
-    display: flex;
-    flex-direction: row;
-    gap: 10%;
-    flex-wrap: wrap-reverse;
-}

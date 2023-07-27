@@ -1,0 +1,27 @@
+.icon-logo-animate.first {
+    fill: none;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawPath 2s linear forwards;
+}
+
+.icon-logo-animate.second {
+    fill: none;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawPath 3s linear forwards;
+}
+
+.icon-logo-animate.third {
+    fill: none;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawPath 4s linear forwards;
+}
+
+
+@keyframes drawPath {
+    to {
+      stroke-dashoffset: 0;
+    }
+}

@@ -1,14 +1,17 @@
 .card__header {
     display: flex;
-    flex-direction: row;
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    height: max-content;
-    justify-content: space-between;
+    height: calc(100% / 6);
+    justify-content: center;
     align-items: center;
-    margin-top: 5px;
-    gap: 10px;
+    background: rgba(255, 255, 255, 0.70);
+    backdrop-filter: blur(25px);
 }
 
-.icon-item_like {
-    align-self: flex-start;
+.card__header.full {
+    height: 100%;
+    width: 100%;
+    background-color: #dedede;
 }
