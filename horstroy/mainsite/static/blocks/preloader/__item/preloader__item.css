@@ -1,0 +1,7 @@
+.preloader__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99px;
+    height: 39px;
+}

@@ -1,0 +1,12 @@
+.card-list__container {
+    margin-top: 96px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width : 1024px) {
+    .card-list__container {
+        margin-top: 16px;
+    }
+}

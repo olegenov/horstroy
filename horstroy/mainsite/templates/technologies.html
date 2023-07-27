@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block title %}Horstroy | Технологии{% endblock %}
+{% block static %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'pages/flatpage.css' %}" type='text/css' media='all'>
+{% endblock %}
+{% block content %}
+<div class="flatpage__container">
+    <div class="flatpage__header">
+        <h1 class="flatpage__title">
+            Технологии
+        </h1>
+    </div>
+    <div class="flatpage__content">
+        <p class="flatpage__text">Наши технологии улучшают процессы строительства и приносят значительные преимущества нашим клиентам.</p>
+    </div>
+    <div class="flatpage__content">
+        <div class="flatpage__subtitle">Быстрота и эффективность</div>
+        <p class="flatpage__text">Современные строительные технологии позволяют нам значительно сократить время выполнения проектов. Наша компания предоставляет решения, которые способствуют ускорению производственных процессов и снижают затраты на рабочую силу.</p>
+    </div>
+    <div class="flatpage__content">
+        <div class="flatpage__subtitle">Качество и надежность</div>
+        <p class="flatpage__text">Мы стремимся предоставлять высочайшее качество в каждом аспекте строительства. Это обеспечивает удовлетворенность наших клиентов и делает нашу компанию надежным партнером в реализации любых строительных задач.</p>
+    </div>
+    <div class="flatpage__content">
+        <div class="flatpage__subtitle">Экологическая ответственность</div>
+        <p class="flatpage__text">Мы понимаем важность ответственного отношения к окружающей среде, поэтому в нашей компании активно применяются экологически чистые технологии и материалы, которые снижают отрицательное воздействие на природу. Наш подход к экологии способствует минимизации отходов на стройплощадке.</p>
+    </div>
+    <div class="flatpage__content">
+        <div class="flatpage__subtitle">Безопасность и соблюдение нормативов</div>
+        <p class="flatpage__text">Приоритетом для нас является безопасность всех участников строительного процесса, будь то наши сотрудники или клиенты. Мы строго соблюдаем все необходимые строительные нормативы и стандарты, что гарантирует выполнение работ в соответствии с высокими стандартами безопасности.</p>
+    </div>
+    <div class="flatpage__content">
+        <div class="flatpage__subtitle">Индивидуальный подход</div>
+        <p class="flatpage__text">Мы понимаем, что каждый клиент уникален и требует индивидуального подхода. Поэтому наша компания готова предложить гибкие решения и принять во внимание особенности каждой задачи. Мы стремимся понимать потребности и цели наших клиентов, чтобы обеспечить оптимальное решение для успешного завершения проекта.</p>
+    </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{% static 'js/components/Menu.js' %}"></script>
+<script src="{% static 'js/menu.js' %}"></script>
+<script src="{% static 'js/preloader.js' %}"></script>
+{% endblock %}

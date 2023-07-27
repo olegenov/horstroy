@@ -1,0 +1,21 @@
+.icon-mail {
+    display: block;
+    position: inherit;
+    box-align: center;
+    width: 45px;
+    height: 28px;
+    background-image: url("../../images/mail.svg");
+    background-size: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: transparent
+}
+
+@media only screen and (max-width : 1024px) {
+    .icon-mail {
+        background-image: url("../../images/mail-small.svg");
+        width: 36px;
+        height: 22px;
+    }
+}

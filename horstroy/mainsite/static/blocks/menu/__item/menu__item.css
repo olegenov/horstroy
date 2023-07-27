@@ -1,0 +1,21 @@
+.menu__item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0;
+    width: max-content;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 48px;
+    opacity: 0;
+}
+
+.menu__item.active {
+    font-weight: 500;
+}
+
+.menu__item.appear {
+    transition: 1s opacity;
+    opacity: 1;
+}

@@ -1,0 +1,22 @@
+<div class="menu closed" id="MenuContainer">
+    <div class="menu__container">
+        <button class="button__empty" id="MenuClose">
+            <span class="icon-cross"></span>
+        </button>
+        <div class="menu__item">
+            <a href="{% url 'index' %}" class="menu__item__title link">Главная</a>
+        </div>
+        <div class="menu__item">
+            <a href="{% url 'technologies' %}" class="menu__item__title link active" id="MenuItem">Строительные технологии</a>
+        </div>
+        <div class="menu__item">
+            <a href="{% url 'materials' %}" class="menu__item__title link" id="MenuItem">Материалы</a>
+        </div>
+        <div class="menu__item">
+            <a href="{% url 'portfolio' %}" class="menu__item__title link" id="MenuItem">Портфолио</a>
+        </div>
+        <div class="menu__item">
+            <a href="{% url 'designs' %}" class="menu__item__title link" id="MenuItem">Дизайн-ателье</a>
+        </div>
+    </div>
+</div>

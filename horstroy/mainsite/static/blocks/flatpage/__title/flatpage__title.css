@@ -1,0 +1,17 @@
+.flatpage__title {
+    color: #000;
+    font-family: Cormorant Garamond;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+@media only screen and (max-width : 1024px) {
+    .flatpage__title {
+        font-size: 24px;
+    }
+}

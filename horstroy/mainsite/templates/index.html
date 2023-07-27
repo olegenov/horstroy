@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block title %}Horstroy | Главная{% endblock %}
+{% block static %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'pages/index.css' %}" type='text/css' media='all'>
+{% endblock %}
+{% block info %}
+{% for service in services %}
+    {% include 'includes/info-window.html' with item=service %}
+{% endfor %}
+{% endblock %}
+{% block banner %}
+<div class="banner"></div>
+{% endblock %}
+{% block content %}
+<div class="main__section left" id="About">
+    <div class="main__section__content">
+        <div class="main__section__header">
+            <h1 class="main__section__title">О нас</h1>
+        </div>
+        <p class="main__section__text">
+            Наша компания представляет собой строительную организацию по комплексному созданию жилых интерьеров «под ключ», от разработки дизайн-проектов интерьеров, до ремонта и меблировки помещений. Сегодня у нас большая команда профессиональных мастеров. Все мастера имеют за плечами огромный опыт ремонтно-отделочных работ. Наши специалисты качественно выполняют ремонт квартир, загородных домов, офисов. Мы проводим самый жесткий отбор и оставляем только лучших! Опыт работы позволяет предложить Вам наилучшие решения по строительно-отделочным работам, а также по строительству домов и коттеджей «под ключ». Мы работаем по рекомендациям наших заказчиков.
+        </p>
+    </div>
+    <img class="main__section__image right" src="{% static 'images/about.png' %}">
+</div>
+<div class="main__section cards" id="Services">
+    <a href="{% url 'services' %}" class="main__section__header link">
+        <h1 class="main__section__title">Услуги</h1>
+        <span class="icon-arrow"></span>
+    </a>
+    <list class="main__section__card-list">
+        {% for service in services %}
+            {% include 'includes/card.html' with item=service %}
+        {% endfor %}
+        <div class="card">
+            <div class="card__container">
+                <a href="{% url 'services' %}" class="link">
+                    <div class="card__header full">
+                        <p class="card__title">
+                            Все услуги
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </list>
+</div>
+<div class="main__section right" id="Contacts">
+    <div class="main__section__content">
+        <div class="main__section__header">
+            <h1 class="main__section__title">Контакты</h1>
+        </div>
+        <a href="tel:+79969795030" class="main__section__icon-sign link">
+            <span class="icon-tel"></span>
+            <p class="main__section__icon-sign text">+7 (996) 979-50-30</p> 
+        </a>
+        <a href="tel:+79647771707" class="main__section__icon-sign link">
+            <span class="icon-tel"></span>
+            <p class="main__section__icon-sign text">+7 (964) 777-17-07</p> 
+        </a>
+        <a href="mailto:contact@horstroy.ru" class="main__section__icon-sign link">
+            <span class="icon-mail"></span>
+            <p class="main__section__icon-sign text">contact@horstroy.ru</p> 
+        </a>
+    </div>
+    <img class="main__section__image left hidden" src="{% static 'images/contacts.png' %}">
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{% static 'js/components/Menu.js' %}"></script>
+<script src="{% static 'js/components/Info.js' %}"></script>
+<script src="{% static 'js/info-window.js' %}"></script>
+<script src="{% static 'js/cards.js' %}"></script>
+<script src="{% static 'js/menu.js' %}"></script>
+<script src="{% static 'js/preloader.js' %}"></script>
+{% endblock %}

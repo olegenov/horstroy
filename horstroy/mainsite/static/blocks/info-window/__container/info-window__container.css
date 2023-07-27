@@ -1,0 +1,31 @@
+.info-window__container {
+    position: relative;
+    max-width: 60%;
+    min-width: 50%;
+    max-height: 80%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background-color: #fff;
+    padding-bottom: 32px;
+}
+
+.info-window__container::-webkit-scrollbar{
+    height: 4px;
+    width: 8px;
+    background-color: none;
+}
+
+.info-window__container::-webkit-scrollbar-thumb {
+    background-color: #adadad;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width : 1024px) {
+    .info-window__container{
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        max-height: none;
+    }
+}

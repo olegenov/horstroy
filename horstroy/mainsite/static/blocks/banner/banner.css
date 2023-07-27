@@ -1,0 +1,24 @@
+.banner {
+    display: block;
+    position: absolute;
+    overflow-y: visible;
+    top: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 698px;
+    box-sizing: border-box;
+    position: relative;
+    background: url("../../images/banner-image.png"), lightgray 50% / cover repeat;
+    background-size: cover;
+    background-position: bottom;
+    z-index: 0;
+    margin-bottom: 38px;
+}
+
+@media only screen and (max-width : 1024px) {
+    .banner {
+        height: 229px;
+        margin-bottom: 24px;
+    }
+}

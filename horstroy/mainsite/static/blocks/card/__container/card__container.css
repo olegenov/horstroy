@@ -1,0 +1,7 @@
+.card__container {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    width: 100%;
+    height: 100%;
+}

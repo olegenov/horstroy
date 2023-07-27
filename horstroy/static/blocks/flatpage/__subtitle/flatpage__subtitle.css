@@ -1,0 +1,17 @@
+.flatpage__subtitle {
+    color: #000;
+    font-family: Cormorant Garamond;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+@media only screen and (max-width : 1024px) {
+    .flatpage__subtitle {
+        font-size: 20px;
+    }
+}

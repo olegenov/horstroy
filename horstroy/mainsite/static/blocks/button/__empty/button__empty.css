@@ -1,0 +1,16 @@
+.button__empty {
+    height: max-content;
+    width: max-content;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.button__empty:hover {
+    opacity: 0.7;
+}
+
+.button__empty.hide {
+    display: none;
+}

@@ -1,0 +1,16 @@
+.flatpage__text {
+    color: #000;
+    font-family: Cormorant Garamond;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width : 1024px) {
+    .flatpage__text {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Horstroy | {{ flatpage.title }}{% endblock %}
+{% block static %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'pages/flatpage.css' %}" type='text/css' media='all'>
+{% endblock %}
+{% block content %}
+<div class="flatpage__container">
+    {{ flatpage.content }}
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{% static 'js/components/Menu.js' %}"></script>
+<script src="{% static 'js/menu.js' %}"></script>
+<script src="{% static 'js/preloader.js' %}"></script>
+{% endblock %}

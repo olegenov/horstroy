@@ -1,0 +1,20 @@
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__section">
+            <div class="footer__items">
+                <h3 class="footer__item__title">Навигация</h3>
+                <a href="{% url 'index' %}" class="footer__item link">Главная</a>
+                <a href="{% url 'technologies' %}" class="footer__item link">Строительные технологии</a>
+                <a href="{% url 'materials' %}" class="footer__item link">Материалы</a>
+                <a href="{% url 'portfolio' %}" class="footer__item link">Портфолио</a>
+                <a href="{% url 'designs' %}" class="footer__item link">Дизайн-ателье</a>
+            </div>
+            <div class="footer__items">
+                <h3 class="footer__item__title">Документы</h3>
+                <a href="{% url 'privacy' %}" class="footer__item link">Конфиденциальность</a>
+            </div>
+        </div>
+        <p class="footer__item">© HORSTROY, {% now 'Y' %}</p>
+        <a href="" class="link"><span class="icon-olegenov"></span></a>
+    </div>
+</footer>

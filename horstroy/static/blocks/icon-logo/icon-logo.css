@@ -1,0 +1,21 @@
+.icon-logo {
+    display: block;
+    position: inherit;
+    box-align: center;
+    width: 252px;
+    height: 56px;
+    background-image: url("../../images/logo.svg");
+    background-size: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: transparent
+}
+
+@media only screen and (max-width : 1024px) {
+    .icon-logo {
+        width: 52px;
+        height: 56px;
+        background-image: url("../../images/logo-small.svg");
+    }
+}

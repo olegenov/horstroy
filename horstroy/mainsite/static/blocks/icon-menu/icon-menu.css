@@ -1,0 +1,13 @@
+.icon-menu {
+    display: block;
+    position: inherit;
+    box-align: center;
+    width: 42px;
+    height: 22px;
+    background-image: url("../../images/menu.svg");
+    background-size: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: transparent
+}

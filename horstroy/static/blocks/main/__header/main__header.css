@@ -1,0 +1,11 @@
+.main__header {
+    margin-top: 96px;
+    width: 100%;
+    margin-bottom: 23px;
+}
+
+@media only screen and (max-width : 1024px) {
+    .main__header {
+        margin-top: 16px;
+    }
+}

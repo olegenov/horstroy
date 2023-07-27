@@ -1,0 +1,30 @@
+.button {
+    position: relative;
+    height: 46px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    color: #FFFFFF;
+    line-height: 16px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 23px;
+    border: none;
+    padding: auto;
+    width: max-content;
+    padding: 10px 16px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width : 1024px) {
+    .button {
+        font-size: 12px;
+        line-height: 16px;
+        border-radius: 21px;
+        padding: auto;
+    }
+}

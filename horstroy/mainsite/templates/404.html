@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Horstroy | Технологии{% endblock %}
+{% block static %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'pages/flatpage.css' %}" type='text/css' media='all'>
+{% endblock %}
+{% block content %}
+<div class="flatpage__container">
+    <div class="flatpage__header">
+        <h1 class="flatpage__title">
+            Ошибка 404
+        </h1>
+    </div>
+    <div class="flatpage__content">
+        <div class="flatpage__subtitle">Страницы не существует</div>
+    </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{% static 'js/components/Menu.js' %}"></script>
+<script src="{% static 'js/menu.js' %}"></script>
+<script src="{% static 'js/preloader.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Horstroy | Портфолио{% endblock %}
+{% block static %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'pages/services.css' %}" type='text/css' media='all'>
+{% endblock %}
+{% block info %}
+{% for project in projects %}
+    {% include 'includes/info-window.html' with item=project %}
+{% endfor %}
+{% endblock %}
+{% block content %}
+<div class="card-list__container">
+    <div class="card-list" id="Services">
+        {% for project in projects %}
+            {% include 'includes/card.html' with item=project %}
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{% static 'js/components/Menu.js' %}"></script>
+<script src="{% static 'js/components/Info.js' %}"></script>
+<script src="{% static 'js/info-window.js' %}"></script>
+<script src="{% static 'js/cards.js' %}"></script>
+<script src="{% static 'js/menu.js' %}"></script>
+<script src="{% static 'js/preloader.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,37 @@
+.main__section {
+    width: 100%;
+    display: flex;
+    gap: 27px;
+    margin-bottom: 70px;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 600px;
+}
+
+.main__section.left {
+    justify-content: flex-start;
+}
+
+.main__section.right {
+    justify-content: flex-end;
+    width: 70%;
+}
+
+.main__section.cards {
+    flex-direction: column;
+    height: max-content;
+}
+
+@media only screen and (max-width : 1024px) {
+    .main__section {
+        gap: 15px;
+        margin-bottom: 24px;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        height: max-content;
+    }
+
+    .main__section {
+        flex-direction: column;
+    }
+}

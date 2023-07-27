@@ -1,0 +1,24 @@
+.flatpage__section {
+    display: grid;
+    gap: 69px;
+    grid-template-columns: repeat(2, 1fr);;
+    width: 100%;
+}
+
+.flatpage__section.three {
+    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);;
+}
+
+@media only screen and (max-width : 1024px) {
+    .flatpage__section {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .flatpage__section.three {
+        display: flex;
+        flex-direction: column;
+    }
+}

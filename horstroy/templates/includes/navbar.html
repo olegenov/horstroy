@@ -1,0 +1,8 @@
+<div class="navbar">
+    <div class="navbar__container container">
+        <a href="{% url 'technologies' %}" class="navbar__item {% if page == 'technologies' %}active{% endif %} link">Строительные технологии</a>
+        <a href="{% url 'materials' %}" class="navbar__item {% if page == 'materials' %}active{% endif %} link">Материалы</a>
+        <a href="{% url 'portfolio' %}" class="navbar__item {% if page == 'portfolio' %}active{% endif %} link">Портфолио</a>
+        <a href="{% url 'designs' %}" class="navbar__item {% if page == 'designs' %}active{% endif %} link">Дизайн-ателье</a>
+    </div>
+</div>

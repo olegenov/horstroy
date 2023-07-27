@@ -1,0 +1,28 @@
+<div class="info-window" id="{{ item.pk }}">
+    <div class="info-window__container">
+        <button class="icon-close-window button__empty" id="WindowClose"></button>
+        {% load thumbnail %}
+        {% thumbnail item.image "480x720" crop="center" upscale=True as im %}
+        <img src="{{ im.url }}" class="info-window__nav">
+        {% endthumbnail %}
+        <div class="info-window__content">
+            <div class="info-window__header">
+                <h1 class="info-window__title">{{ item.title }}</h1>
+            </div>
+            <p class="info-window__text">
+                {{ item.description }}
+            </p>
+            <div class="info-window__header">
+                <h1 class="info-window__title">Галерея</h1>
+            </div>
+            <div class="info-window__gallery">
+                {% for image in item.gallery.all %}
+                    {% load thumbnail %}
+                    {% thumbnail image.image "480x720" crop="center" upscale=True as im %}
+                    <img src="{{ im.url }}" class="info-window__gallery__item">
+                    {% endthumbnail %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+.icon-tel {
+    display: block;
+    position: inherit;
+    box-align: center;
+    width: 46px;
+    height: 50px;
+    background-image: url("../../images/tel.svg");
+    background-size: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: transparent
+}
+
+@media only screen and (max-width : 1024px) {
+    .icon-tel {
+        background-image: url("../../images/tel-small.svg");
+        width: 33px;
+        height: 36px;
+    }
+}

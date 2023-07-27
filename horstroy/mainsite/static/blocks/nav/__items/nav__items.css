@@ -1,0 +1,14 @@
+.nav__items {
+    display: flex;
+    height: 100%;
+    width: max-content;
+    flex-direction: row;
+    gap: 66px;
+    align-items: center;
+}
+
+@media only screen and (max-width : 1024px) {
+    .nav__items{
+        display: none;
+    }
+}

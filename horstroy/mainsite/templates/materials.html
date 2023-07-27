@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% block title %}Horstroy | Материалы{% endblock %}
+{% block static %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'pages/flatpage.css' %}" type='text/css' media='all'>
+{% endblock %}
+{% block content %}
+<div class="flatpage__container">
+    <div class="flatpage__header">
+        <h1 class="flatpage__title">
+            Материалы
+        </h1>
+    </div>
+    <div class="flatpage__content">
+        <p class="flatpage__text">Качество используемых материалов - это один из важнейших аспектов, которому мы уделяем максимальное внимание на каждом этапе строительства. Мы тщательно подбираем каждый используемый в работе материал, уделяя внимание их прочности, долговечности, экологичности и соответствию строгим стандартам безопасности.</p>
+    </div>
+    <div class="flatpage__content">
+        <p class="flatpage__text">Используя передовые строительные технологии и инновационные материалы, мы обеспечиваем нашим клиентам не только высочайшее качество, но и экономию времени и средств.</p>
+    </div>
+    <div class="flatpage__content">
+        <p class="flatpage__text">Наши поставщики - это проверенные партнеры, которые предоставляют нам только сертифицированные материалы. Благодаря этому мы можем гарантировать долгий срок службы и надежность каждого завершенного проекта.</p>
+    </div>
+    <div class="flatpage__section">
+        <div class="flatpage__imagewithlabel">
+            <img class="flatpage__image" src="{% static 'images/doska.png' %}">
+            <div class="flatpage__image label">Инженерная доска</div>
+        </div>
+        <div class="flatpage__imagewithlabel">
+            <img class="flatpage__image" src="{% static 'images/smesi.png' %}">
+            <div class="flatpage__image label">Сухие смеси</div>
+        </div>
+    </div>
+    <div class="flatpage__section">
+        <div class="flatpage__imagewithlabel">
+            <img class="flatpage__image" src="{% static 'images/kraski.png' %}">
+            <div class="flatpage__image label">Краски</div>
+        </div>
+        <div class="flatpage__imagewithlabel">
+            <img class="flatpage__image" src="{% static 'images/kley.png' %}">
+            <div class="flatpage__image label">Плиточный клей и затирка</div>
+        </div>
+    </div>
+    <div class="flatpage__section">
+        <div class="flatpage__imagewithlabel">
+            <img class="flatpage__image" src="{% static 'images/elec.png' %}">
+            <div class="flatpage__image label">Электрика</div>
+        </div>
+        <div class="flatpage__imagewithlabel">
+            <img class="flatpage__image" src="{% static 'images/poliurtan.png' %}">
+            <div class="flatpage__image label">Полиуретановые изделие</div>
+        </div>
+    </div>
+    <div class="flatpage__section">
+        <div class="flatpage__imagewithlabel">
+            <img class="flatpage__image" src="{% static 'images/plitka.png' %}">
+            <div class="flatpage__image label">Плитка</div>
+        </div>
+        <div class="flatpage__imagewithlabel">
+            <img class="flatpage__image" src="{% static 'images/sant.png' %}">
+            <div class="flatpage__image label">Сантехника</div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{% static 'js/components/Menu.js' %}"></script>
+<script src="{% static 'js/menu.js' %}"></script>
+<script src="{% static 'js/preloader.js' %}"></script>
+{% endblock %}

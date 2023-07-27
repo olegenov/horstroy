@@ -1,0 +1,12 @@
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width : 1024px) {
+    .nav__container {
+        padding: 0 16px;
+    }
+}

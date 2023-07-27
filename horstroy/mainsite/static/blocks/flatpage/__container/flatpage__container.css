@@ -1,0 +1,13 @@
+.flatpage__container {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+@media only screen and (max-width : 1024px) {
+    .flatpage__container {
+        margin-top: 16px;
+        gap: 24px;
+    }
+}
