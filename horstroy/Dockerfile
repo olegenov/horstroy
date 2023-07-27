@@ -4,4 +4,4 @@ WORKDIR /code
 COPY . /code
 RUN python3 -m pip install -r /code/requirements.txt
 ENTRYPOINT ["sh", "entrypoint.sh"]
-CMD gunicorn horstroy.wsgi.application --bind 0.0.0.0:8000
+CMD gunicorn horstroy.wsgi:application --bind 0.0.0.0:8000
