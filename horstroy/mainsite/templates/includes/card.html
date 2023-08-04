@@ -2,7 +2,7 @@
     <div class="card__container">
         <div class="link">
             {% load thumbnail %}
-            {% thumbnail item.image "480x720" crop="center" upscale=True as im %}
+            {% thumbnail item.image "720x720" crop="center" upscale=True as im %}
             <img class="card__image" src="{{ im.url }}">
             {% endthumbnail %}
             <div class="card__header">
