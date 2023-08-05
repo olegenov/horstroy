@@ -2,15 +2,9 @@
     <div class="card__container">
         <div class="link">
             {% load thumbnail %}
-            {% if item.image.height > item.image.width %}
-                {% thumbnail item.image "480x720" crop="center" upscale=True as im %}
-                <img class="card__image" src="{{ im.url }}">
-                {% endthumbnail %}
-            {% else %}
-                {% thumbnail item.image "720x480" crop="center" upscale=True as im %}
-                <img class="card__image" src="{{ im.url }}">
-                {% endthumbnail %}
-            {% endif %}
+            {% thumbnail item.image "480x720" crop="center" upscale=True as im %}
+            <img class="card__image" src="{{ im.url }}">
+            {% endthumbnail %}
             <div class="card__header">
                 <p class="card__title">
                     {{ item.title }}

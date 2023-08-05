@@ -18,9 +18,15 @@
             <div class="info-window__gallery">
                 {% for image in item.gallery.all %}
                     {% load thumbnail %}
-                    {% thumbnail image.image "720x480" crop="center" upscale=True as im %}
-                    <img src="{{ im.url }}" class="info-window__gallery__item">
-                    {% endthumbnail %}
+                    {% if item.image|is_portrait %}
+                        {% thumbnail item.image "480x720" crop="center" upscale=True as im %}
+                        <img src="{{ im.url }}" class="info-window__gallery__item">
+                        {% endthumbnail %}
+                    {% else %}
+                        {% thumbnail item.image "720x480" crop="center" upscale=True as im %}
+                        <img src="{{ im.url }}" class="info-window__gallery__item">
+                        {% endthumbnail %}
+                    {% endif %}
                 {% endfor %}
             </div>
         </div>
