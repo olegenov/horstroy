@@ -2,8 +2,7 @@
     <div class="card__container">
         <div class="link">
             {% load thumbnail %}
-            {% load custom_filters %}
-            {% if item.image|is_portrait %}
+            {% if image.height > image.width %}
                 {% thumbnail item.image "480x720" crop="center" upscale=True as im %}
                 <img class="card__image" src="{{ im.url }}">
             {% else %}
