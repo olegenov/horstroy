@@ -22,6 +22,7 @@ class ImageAdmin(admin.ModelAdmin):
     list_display = ('pk', 'name') 
     search_fields = ('name', ) 
     empty_value_display = '-'
+    ordering = ('name', )
 
 admin.site.register(DesignProject, DesignProjectAdmin)
 admin.site.register(Project, ProjectAdmin)
