@@ -7,6 +7,9 @@ class Image(models.Model):
     def __str__(self) -> str:
         return self.name
 
+    class Meta:
+        ordering = ("name", )
+
 class Service(models.Model):
     title = models.CharField(max_length=50, verbose_name="Название")
     description = models.TextField(verbose_name="Описание")
