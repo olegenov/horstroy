@@ -17,7 +17,9 @@ class Service(models.Model):
     gallery = models.ManyToManyField(
         Image,
         related_name='service_gallery',
-        verbose_name="Галерея"
+        verbose_name="Галерея",
+        null=True,
+        blank=True,
     )
 
 class Project(models.Model):

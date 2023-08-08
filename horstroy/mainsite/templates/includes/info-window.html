@@ -12,23 +12,25 @@
             <p class="info-window__text">
                 {{ item.description }}
             </p>
-            <div class="info-window__header">
-                <h1 class="info-window__title">Галерея</h1>
-            </div>
-            <div class="info-window__gallery">
-                {% for image in item.gallery.all %}
-                    {% load thumbnail %}
-                    {% if image.image|is_portrait %}
-                        {% thumbnail image.image "480x720" crop="center" upscale=True as im %}
-                        <img src="{{ im.url }}" class="info-window__gallery__item">
-                        {% endthumbnail %}
-                    {% else %}
-                        {% thumbnail image.image "720x480" crop="center" upscale=True as im %}
-                        <img src="{{ im.url }}" class="info-window__gallery__item">
-                        {% endthumbnail %}
-                    {% endif %}
-                {% endfor %}
-            </div>
+            {% if item.gallery %}
+                <div class="info-window__header">
+                    <h1 class="info-window__title">Галерея</h1>
+                </div>
+                <div class="info-window__gallery">
+                    {% for image in item.gallery.all %}
+                        {% load thumbnail %}
+                        {% if image.image|is_portrait %}
+                            {% thumbnail image.image "480x720" crop="center" upscale=True as im %}
+                            <img src="{{ im.url }}" class="info-window__gallery__item">
+                            {% endthumbnail %}
+                        {% else %}
+                            {% thumbnail image.image "720x480" crop="center" upscale=True as im %}
+                            <img src="{{ im.url }}" class="info-window__gallery__item">
+                            {% endthumbnail %}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            {% endif %}
         </div>
     </div>
 </div>
