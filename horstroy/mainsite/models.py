@@ -20,7 +20,7 @@ class Service(models.Model):
         verbose_name="Галерея",
         blank=True,
     )
-    priority = models.PositiveIntegerField(verbose_name="Приоритет")
+    priority = models.PositiveIntegerField(verbose_name="Приоритет", default=1)
 
     class Meta:
         ordering = ("priority", )
