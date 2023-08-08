@@ -10,8 +10,6 @@
     max-width: 100%;
     font-variant-numeric: lining-nums tabular-nums;
     cursor: default;
-    text-align: center;
-    padding: 0 16px
 }
 
 @media only screen and (max-width : 1024px) {
