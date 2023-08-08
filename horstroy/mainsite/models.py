@@ -18,9 +18,12 @@ class Service(models.Model):
         Image,
         related_name='service_gallery',
         verbose_name="Галерея",
-        null=True,
         blank=True,
     )
+    priority = models.PositiveIntegerField(verbose_name="Приоритет")
+
+    class Meta:
+        ordering = ("priority", )
 
 class Project(models.Model):
     title = models.CharField(max_length=50, verbose_name="Название")

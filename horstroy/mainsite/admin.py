@@ -4,7 +4,7 @@ from .models import Service, Image, Project, DesignProject
 
 
 class ServiceAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'title') 
+    list_display = ('pk', 'title', 'priority') 
     search_fields = ('title', ) 
     empty_value_display = '-'
 
